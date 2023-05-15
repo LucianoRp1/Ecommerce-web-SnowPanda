@@ -1,0 +1,155 @@
+#light .el-wrapper {
+  width: 40vw;
+  padding: 15px;
+  margin: 15px auto;
+  box-shadow: 10px 10px 1rem #0004;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #fefefe, #f8f8f8);
+}
+
+#dark .el-wrapper {
+  width: 40vw;
+  padding: 15px;
+  margin: 15px auto;
+  box-shadow: 10px 10px 1rem rgba(154, 154, 154, 0.267);
+  /* border: 2px solid #ccc; */
+  border-radius: 20px;
+  background: linear-gradient(45deg, #62696D, #9DA5AB);
+}
+
+.box-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.box-up .img {
+  border-radius: 20px;
+  max-width: 80%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.el-wrapper:hover .img {
+  transform: scale(0.9);
+  transition: all 0.5s ease-in-out;
+}
+
+.info-inner .p-name,
+.info-inner .p-company {
+  display: block;
+  font-weight: bold;
+}
+
+#light .info-inner .p-name {
+  font-size: 18px;
+  color: #252525;
+  font-weight: bold;
+}
+
+#dark .info-inner .p-name {
+  font-size: 18px;
+  color: #F6F6F6;
+  font-weight: bold;
+}
+
+#light .info-inner .p-company {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #8c8c8c;
+  font-weight: bold;
+}
+
+#dark .info-inner .p-company {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #62696D;
+  font-weight: bold;
+}
+
+#light .price {
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  color: #252525;
+  font-weight: bold;
+  position: relative;
+  top: -10px;
+  line-height: 60px;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+#dark .price {
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  color: #F6F6F6;
+  font-weight: bold;
+  position: relative;
+  top: -10px;
+  line-height: 60px;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.price:hover::before {
+  width: calc(80% - 4px);
+  height: calc(80% - 4px);
+}
+
+.buttonvolver {
+  margin: 50px;
+  border-radius: 8px;
+  height: 40px;
+  padding: 10px 20px;
+  background-color: #3d3d3d;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttonvolver:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #3d3d3d;
+  border: 2px solid #3d3d3d;
+}
+
+.noproducts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+
+
+@media (max-width: 1050px) {
+
+  .box-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  #dark .el-wrapper.el-wrapper {
+    width: 90%;
+  }
+
+  #light .el-wrapper {
+    width: 90%;
+  }
+}

@@ -1,0 +1,36 @@
+.marketing {
+  transition: all 0.3 ease;
+}
+
+.col-2 {
+  margin: 0 5rem;
+  text-align: center;
+}
+
+#light .text:hover {
+  color: #287094 !important;
+}
+#dark .text:hover {
+  color: #6096ba !important;
+}
+
+.fw-normal {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 480px) {
+  .marketing {
+    width: 100%;
+    padding: 1%;
+  }
+
+  .col-2 {
+    margin: 0;
+    text-align: center;
+    width: 50%;
+  }
+
+  .link img {
+    width: 100%;
+  }
+}

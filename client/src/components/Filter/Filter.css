@@ -1,0 +1,121 @@
+ .filtro-button{
+    border-radius: 8px;
+    height: 40px;
+    padding: 0.4em;
+    margin-left: 10px;   
+    margin-top: 3px;
+    
+}
+
+.filtro-button:hover {
+    box-shadow: 0 0 0 6px #488cfb;
+}
+
+.sidebar {
+    position: fixed;
+    top: 87px;
+    left: 0;
+    width: 300px;   
+    background-color: white;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .sidebar label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .sidebar select,
+  .sidebar input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    
+  }
+
+  .burger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  } 
+  #light .burger{
+    background-color: #F6F6F6;
+  }
+  #dark .burger{
+    background-color: #1E1E1E;
+  }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .hamburger:hover .hamburger-line {
+    background-color: #21ad1c;
+  }
+  
+  .hamburger-line {
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin: 5px;
+    background-color: #287094;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .open .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .open .hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .open .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  @media (max-width: 1050px) {
+    .sidebar {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 90%;
+      height: auto;  
+      margin-left: 5%;
+    }
+    .paginat{
+      margin-top: 10px;
+    }
+
+   .paginas{
+    margin-left: 0;
+   } 
+    nav {     
+      padding-top: 35px;
+      padding-bottom: 35px;
+      padding-left: 5px;
+    }
+  }
+
+
+ 
+  
